@@ -1,7 +1,7 @@
 import { Client } from 'discord.js'
 import ready from './listeners/ready'
-import dotenv from 'dotenv';
-dotenv.config();
+import dotenv from 'dotenv'
+dotenv.config()
 
 console.log('Bot is starting...')
 
@@ -12,4 +12,3 @@ const client = new Client({
 ready(client)
 
 client.login(process.env.BOT_TOKEN)
-
